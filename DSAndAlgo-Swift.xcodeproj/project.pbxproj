@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1831B2E3262789C600430F29 /* DSAndAlgo_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1831B2D9262789C600430F29 /* DSAndAlgo_Swift.framework */; };
-		1831B2E8262789C600430F29 /* DSAndAlgo_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1831B2E7262789C600430F29 /* DSAndAlgo_SwiftTests.swift */; };
 		1831B2EA262789C600430F29 /* DSAndAlgo_Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 1831B2DC262789C600430F29 /* DSAndAlgo_Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1831B2F826278CCD00430F29 /* SumOfMaximumMinimumNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1831B2F726278CCD00430F29 /* SumOfMaximumMinimumNumbers.swift */; };
+		1831B2FE26278CD600430F29 /* SumOfMaximumMinimumNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1831B2FD26278CD600430F29 /* SumOfMaximumMinimumNumbersTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +28,9 @@
 		1831B2DC262789C600430F29 /* DSAndAlgo_Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSAndAlgo_Swift.h; sourceTree = "<group>"; };
 		1831B2DD262789C600430F29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1831B2E2262789C600430F29 /* DSAndAlgo-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DSAndAlgo-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1831B2E7262789C600430F29 /* DSAndAlgo_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSAndAlgo_SwiftTests.swift; sourceTree = "<group>"; };
 		1831B2E9262789C600430F29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1831B2F726278CCD00430F29 /* SumOfMaximumMinimumNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SumOfMaximumMinimumNumbers.swift; sourceTree = "<group>"; };
+		1831B2FD26278CD600430F29 /* SumOfMaximumMinimumNumbersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SumOfMaximumMinimumNumbersTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		1831B2DB262789C600430F29 /* DSAndAlgo-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				1831B2F726278CCD00430F29 /* SumOfMaximumMinimumNumbers.swift */,
 				1831B2DC262789C600430F29 /* DSAndAlgo_Swift.h */,
 				1831B2DD262789C600430F29 /* Info.plist */,
 			);
@@ -80,7 +83,7 @@
 		1831B2E6262789C600430F29 /* DSAndAlgo-SwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				1831B2E7262789C600430F29 /* DSAndAlgo_SwiftTests.swift */,
+				1831B2FD26278CD600430F29 /* SumOfMaximumMinimumNumbersTests.swift */,
 				1831B2E9262789C600430F29 /* Info.plist */,
 			);
 			path = "DSAndAlgo-SwiftTests";
@@ -147,9 +150,11 @@
 				TargetAttributes = {
 					1831B2D8262789C600430F29 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					1831B2E1262789C600430F29 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -194,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1831B2F826278CCD00430F29 /* SumOfMaximumMinimumNumbers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1831B2E8262789C600430F29 /* DSAndAlgo_SwiftTests.swift in Sources */,
+				1831B2FE26278CD600430F29 /* SumOfMaximumMinimumNumbersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +346,7 @@
 		1831B2EE262789C600430F29 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -356,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DSAndAlgo-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -363,6 +371,7 @@
 		1831B2EF262789C600430F29 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -386,6 +395,8 @@
 		1831B2F1262789C600430F29 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "DSAndAlgo-SwiftTests/Info.plist";
@@ -396,6 +407,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DSAndAlgo-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -403,6 +415,8 @@
 		1831B2F2262789C600430F29 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "DSAndAlgo-SwiftTests/Info.plist";
